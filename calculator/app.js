@@ -1,5 +1,11 @@
-let screen = document.getElementsByClassName(".span")
+let screen = document.getElementsByClassName("span")
 
+let arr;
+let num;
 
-const screenView = screen.innerText("Hey")
-console.log(screenView)
+const add = () => {
+    for(let i = 0; i<arr.length; i++){
+        num+=i
+    }
+    screen.innerText=num
+}
