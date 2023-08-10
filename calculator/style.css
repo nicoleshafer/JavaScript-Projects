@@ -2,69 +2,113 @@ body{
     background-color: rgb(227, 225, 225);
     display: flex;
     /* justify-content: center; */
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .calc-container{
     border:1px solid black;
     height:600px;
-    width:400px;
+    width:320px;
     display: flex;
     flex-direction: column;
     border-radius: 30px;
-    background-color: rgb(192, 201, 192);
+    background-color: rgb(15, 15, 15);
     box-shadow: 2px 2px 2px rgb(126, 129, 126)
 }
 
 .screen{
     height:170px;
-    width:350px;
-    background-color: rgb(238, 238, 238);
-    box-shadow: 2px 2px 2px rgb(126, 129, 126);
-    margin: 10px auto;
-    border-radius: 20px;
+    width:320px;
+    color:white;
+    margin: auto -25px;
 }
 
 span{
     display: flex;
-    justify-content: end;
-    transform: translateY(700%);
+    justify-content:right;
+    transform: translateY(145px);
+    font-size: 40px;
 }
+
 .btns{
     display: flex;
-    margin:auto 0px;
-
+    justify-content: center;
+    margin:auto;
+    width:300px;
 }
+
 
 .numbers{
     display: flex;
     flex-wrap: wrap;
-    gap:30px;
-    padding: 20px;
-    margin: 7px 15px;
+    gap:15px;
+    /* padding: 20px; */
+    margin:auto;
+    color:white;
+    
 }
 
 .numbers button{
-    border-radius: 20px;
-    background-color: rgb(202, 205, 202);
-    box-shadow: 2px 2px 2px rgb(126, 129, 126);
+    border-radius: 50%;
+    background-color: rgb(49,49,49);
     color:white;
     height:55px;
     width:60px;
+    font-size: 22px;
     border: none;
 }
 .symbols button{
-    border-radius: 20px;
-    background-color: rgb(140, 145, 140);
-    box-shadow: 2px 2px 2px rgb(126, 129, 126);
+    border-radius: 50px;
+    background-color: rgb(246,153,6);
     color:white;
     border: none;
     height:50px;
     width:50px;
-    margin:  2px 15px;
+    margin:  2px 0;
+    font-size: 24px;
 }
 
 .symbols{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin: 23px 0;
+    gap: 15px;
+    /* margin: 23px 0; */
+    margin:auto;
+    
+}
+
+.zero button{
+    width:142px;
+    border-radius: 30px;
+}
+
+.button-div button:hover{
+    background-color: rgb(108, 108, 108);
+    cursor: pointer;
+}
+
+.symbols button:hover{
+    background-color: rgb(255, 184, 70);
+}
+
+.button-div button:active{
+    background-color: rgb(163, 163, 163);
+    cursor: pointer;
+}
+
+.symbols button:active{
+    background-color: rgb(253, 206, 130);
+}
+
+.top-row{
+    background-color: rgb(159,159,159) !important;
+    color: rgb(40, 40, 40) !important;
+}
+
+.top-row:hover{
+    background-color: rgb(143, 143, 143) !important;
+}
+
+.top-row:active{
+    background-color: rgb(204, 204, 204) !important;
+    cursor: pointer;
 }

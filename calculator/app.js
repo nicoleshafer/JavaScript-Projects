@@ -1,11 +1,7 @@
-let screen = document.getElementsByClassName("span")
+const buttons = document.querySelectorAll("button")
+const screenDisplay = document.querySelectorAll('.span')
 
-let arr;
-let num;
+const calculate = () =>{
 
-const add = () => {
-    for(let i = 0; i<arr.length; i++){
-        num+=i
-    }
-    screen.innerText=num
 }
+buttons.forEach(button => button.addEventListener("click", () => calculate(button) ))
